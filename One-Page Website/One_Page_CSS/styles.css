@@ -1,0 +1,17 @@
+h1 {
+	text-align: center;
+}
+td,
+h4 {
+	text-align: center;
+}
+table {
+	border: 3px solid silver;
+}
+a {
+	text-decoration: none;
+	
+}
+footer {
+	background-color: yellow;
+}
