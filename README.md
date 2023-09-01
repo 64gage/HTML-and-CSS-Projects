@@ -3,7 +3,7 @@
  
 ## Projects
 + [Space Station Site](project/index2.html)
-+ [My Portfolio](https//:64gage.github.io)
++ [My Portfolio](https://64gage.github.io)
 + [Movie Theatre Site](bootstrap4_project/academy_cinemas.html)
 
 ### Space Station Site
