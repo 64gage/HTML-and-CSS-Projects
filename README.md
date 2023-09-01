@@ -1,2 +1,4 @@
 # HTML and CSS Projects
- This is where my coursework projects will be stored during the HTML and CSS course.
+ This is a display of sample websites that I made using HTML and CSS
+ 
+## Projects
