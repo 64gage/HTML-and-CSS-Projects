@@ -1,0 +1,14 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.saturate {
+    filter: saturate(300%);
+}
+
+#gojo {
+    border-radius: 2px 40px 2px 40px;
+}

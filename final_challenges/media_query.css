@@ -1,0 +1,9 @@
+@media screen and (max-width: 600px) {
+    p {
+        color: blue;
+    }
+}
+p {
+    font-size: 50px;
+    font-weight: bold;
+}

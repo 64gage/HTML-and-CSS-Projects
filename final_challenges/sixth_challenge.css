@@ -1,0 +1,27 @@
+.column {
+    float: left;
+    width: 50%
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+p {
+    color: red;
+}
+
+.column {
+    height: 300px;
+    width: 40%;
+    background-color: yellowgreen;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h3 {
+    color: darkolivegreen;
+    font-weight: bolder;
+}
