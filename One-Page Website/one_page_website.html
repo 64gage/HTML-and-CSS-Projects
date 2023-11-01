@@ -4,7 +4,6 @@
 		<title>Replica Nike Dunks</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="./CSS/one_page_website.css">
-		<link rel="stylesheet" href="./One_Page_CSS/styles.css">
 		<link rel="icon" type="image/x-icon" href="./images/favicon/icon_G.png">
 	</head>
 	
@@ -51,70 +50,149 @@
 		<!--END HOME -->
 		
 		<!--  PRODUCTS -->
-		<section>
+		<section class="container">
 			<div id="products">
 				<h1>Products!</h1>
 				<div>
-					<!-- PHOTO-CONTAINER 1 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_1.webp" alt="Image of Product">
-							<div>
-								<h3>Grateful Dead SB Dunks Pink</h3>
-								<p>$4<p>
+					<!--Modal Lightbox Section-->
+						<!-- Images used to open the lightbox -->
+						<div class="row">
+							<div class="column1">
+								<img src="./images/thumb/thumbnail_1.webp" style="width: 300px; height: 225px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+							</div>
+							<div class="column1">
+								<img src="./images/thumb/thumbnail_2.webp" style="width: 300px; height: 225px" onclick="openModal();currentSlide(2)" class="hover-shadow">
+							</div>
+							<div class="column1">
+								<img src="./images/thumb/thumbnail_3.webp" onclick="openModal();currentSlide(3)" class="hover-shadow">
+							</div>
+							<div class="column1">
+								<img src="./images/thumb/thumbnail_4.webp" onclick="openModal();currentSlide(4)" class="hover-shadow">
+							</div>
+							<div class="column1">
+								<img src="./images/thumb/thumbnail_5.webp" onclick="openModal();currentSlide(5)" class="hover-shadow">
 							</div>
 						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 1 -->
-					
-					<!-- PHOTO-CONTAINER 2 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_2.webp" alt="Image of Product">
-							<div>
-								<h3>Nike SB Dunk Low Ben & Jerry's Chunky Dunky</h3>
-								<p>$6<p>
+						<div class="row">
+							<div class="column1">
+								<div>
+									<h3>Grateful Dead SB Dunks Pink</h3>
+								</div>
+							</div>
+							<div class="column1">
+								<div>
+									<h3>Nike SB Dunk Low Ben & Jerry's Chunky Dunky</h3>
+								</div>
+							</div>
+							<div class="column1">
+								<div>
+									<h3>Nike SB Dunk Low Travis Scott</h3>
+								</div>
+							</div>
+							<div class="column1">
+								<div>
+									<h3>Nike Dunk SB Low Freddy Krueger</h3>
+								</div>
+							</div>
+							<div class="column1">
+								<div>
+									<h3>Nike SB Dunk Low Jarritos</h3>
+								</div>
 							</div>
 						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 2 -->
-					
-					<!-- PHOTO-CONTAINER 3 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_3.webp" alt="Image of Product">
-							<div>
-								<h3>Nike SB Dunk Low Travis Scott</h3>
-								<p>$2<p>
+						<div class="row">
+							<div class="column1">
+								<div>
+									<p id="price">$4<p>
+								</div>
+							</div>
+							<div class="column1">
+								<div>
+									<p id="price">$6<p>
+								</div>
+							</div>
+							<div class="column1">
+								<div>
+									<p id="price">$2<p>
+								</div>
+							</div>
+							<div class="column1">
+								<div>
+									<p id="price">$4<p>
+								</div>
+							</div>
+							<div class="column1">
+								<div>
+									<p id="price">$10<p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 3 -->
-					
-					<!-- PHOTO-CONTAINER 4 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_4.webp" alt="Image of Product">
-							<div>
-								<h3>Replica Nike Dunk SB Low Freddy Krueger</h3>
-								<p>$4<p>
+						<!-- END Images used to open the lightbox-->
+
+						<!-- The Modal/Lightbox -->
+						<div id="myModal" class="modal">
+							<span class="close cursor" onclick="closeModal()">&times;</span>
+							<div class="modal-content">
+
+								<div class="mySlides">
+									<div class="numbertext">1 / 5</div>
+									<img src="images/wide/img1_wide.webp" style="width: 100%">
+								</div>
+
+								<div class="mySlides">
+									<div class="numbertext">2 / 5</div>
+									<img src="images/wide/img2_wide.webp" style="width:100%">
+								</div>
+
+								<div class="mySlides">
+									<div class="numbertext">3 / 5</div>
+									<img src="images/wide/img3_wide.webp" style="width:100%">
+								</div>
+
+								<div class="mySlides">
+									<div class="numbertext">4 / 5</div>
+									<img src="images/wide/img4_wide.webp" style="width:100%">
+								</div>
+
+								<div class="mySlides">
+									<div class="numbertext">5 / 5</div>
+									<img src="images/wide/img5_wide.webp" style="width:100%">
+								</div>
+
+								<!-- Next/previous controls -->
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+								<!-- Caption text -->
+								<div class="caption-container">
+									<p id="caption">Click on an image to view</p>
+								</div>
+
+								<!--Thumbnail image controls -->
+								<div class="column">
+									<img class="demo" src="./images/thumb/thumbnail_1.webp" style="width:210px; height:150px" onclick="currentSlide(1)" alt="Grateful Dead SB Dunks Pink">
+								</div>
+
+								<div class="column">
+									<img class="demo" src="./images/thumb/thumbnail_2.webp" style="width:210px; height:150px" onclick="currentSlide(2)" alt="Nike SB Dunk Low Ben & Jerry's Chunky Dunky">
+								</div>
+
+								<div class="column">
+									<img class="demo" src="./images/thumb/thumbnail_3.webp" style="width:210px; height:150px" onclick="currentSlide(3)" alt="Nike SB Dunk Low Travis Scott">
+								</div>
+
+								<div class="column">
+									<img class="demo" src="./images/thumb/thumbnail_4.webp" style="width:210px; height:150px" onclick="currentSlide(4)" alt="Nike Dunk SB Low Freddy Krueger">
+								</div>
+
+								<div class="column">
+									<img class="demo" src="./images/thumb/thumbnail_5.webp" style="width:210px; height:150px" onclick="currentSlide(5)" alt="Nike SB Dunk Low Jarritos">
+								</div>
 							</div>
 						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 4 -->
-					
-					<!-- PHOTO-CONTAINER 5 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumbnail_5.webp" alt="Image of Product">
-							<div>
-								<h3>Nike SB Dunk Low Jarritos</h3>
-								<p>$10<p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 5 -->
-					
+
+					<!-- END MODAL LIGHTBOX SECTION -->
+
 				</div>
 			</div>
 		</section>
@@ -158,7 +236,7 @@
 			<h4>DISCLAIMER: This is not a real web store</h4>
 		</footer>
 		<!-- END FOOTER -->
-		
+		<script src="js/one_page_website.js"></script>
 	</body>
 
 	
